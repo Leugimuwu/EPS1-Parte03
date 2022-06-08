@@ -4,7 +4,8 @@ Created on Wed Jun  8 09:07:44 2022
 
 @author: alumno
 """
- 
+import modularidad
+
 def login(usuario, contraseña):
     us = open("login.txt","rt",encoding='utf8')
     datos_us = us.read()
@@ -29,13 +30,13 @@ def principal():
         opcion = int(input("Seleccione una opción [1-3]: "))
         print("=========================")
         if opcion ==1:
-            print("En proceso")
+            modularidad.listar()
         elif opcion == 2:
-            print("En proceso")
+            modularidad.agregar()
         elif opcion == 3:
-            print("En proceso")
+            modularidad.salir()
         else:
-            print("En proceso")
+            modularidad.error()
 
 i = 1
 while i <= 2:
